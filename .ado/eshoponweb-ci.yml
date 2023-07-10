@@ -1,6 +1,6 @@
 #NAME THE PIPELINE SAME AS FILE (WITHOUT ".yml")
-# trigger:
-# - main
+trigger:
+ - none
 
 resources:
   repositories:
@@ -53,3 +53,4 @@ stages:
         PathtoPublish: '$(Build.SourcesDirectory)/.azure/bicep/webapp.bicep'
         ArtifactName: 'Bicep'
         publishLocation: 'Container'
+    
